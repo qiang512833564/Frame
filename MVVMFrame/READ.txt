@@ -5,6 +5,8 @@ MVVM（Model-View- ViewModel）框架的由来便是MVP（Model-View-Presenter�
 
 MVVM 就是 MVP 的升级版，特点：就是 view 与 viewModel 之间的双向绑定
 
+ViewModel大致上就是MVP的Presenter和MVC的Controller了，而View和ViewModel间没有了MVP的界面接口，而是直接交互，用数据“绑定”的形式让数据更新的事件不需要开发人员手动去编写特殊用例，而是自动地双向同步。
+
 不管是 MVVM 还是 MVP 框架，它们的目的都是为了：把 页面展示 、 数据获取、数据处理、业务逻辑等从混杂的状态分成单一模块
 
 注意：MVVM 或者 MVP 中：
