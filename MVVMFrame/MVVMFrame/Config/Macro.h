@@ -68,7 +68,12 @@
 #define MYLog(...) \
         rac_keywordify \
         NSLog(@"%@,\n%s:%d\n",__VA_ARGS__,__FUNCTION__,__LINE__);
-
+/*
+ 　1) __VA_ARGS__   是一个可变参数的宏，这个可宏是新的C99规范中新增的，目前似乎gcc和VC6.0之后的都支持（VC6.0的编译器不支持）。宏前面加上##的作用在于，当可变参数的个数为0时，这里的##起到把前面多余的","去掉的作用。
+ 　　2) __FILE__    宏在预编译时会替换成当前的源文件名
+ 　　3) __LINE__   宏在预编译时会替换成当前的行号
+ 　　4) __FUNCTION__   宏在预编译时会替换成当前的函数名称
+ */
 #define mainThreadQueue(...) \
         autoreleasepool {\
         if ([NSThread isMainThread]) {__VA_ARGS__} else {\

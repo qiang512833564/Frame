@@ -30,6 +30,50 @@ vector< string > text;
     return array;
 }
 
+template <typename T> void __swap (T &a, T &b)
+{
+    std::cout << "a =" << a << "   " << "b =" << b << std::endl;
+    T c(a); a=b; b=c;
+}
+
+template <typename T>
+class String:std::string {
+    String();
+    String(T name){
+        
+    }
+};
+
+template <class T>
+String<T>::String(){
+    
+}
+
+struct Teacher {
+    Teacher (){
+        std::cout << "Teacter()" <<__FUNCTION__ << std::endl;
+    }
+    
+    ~Teacher(){
+        std::cout << "~Teacher()" << __FUNCTION__ << std::endl;
+    }
+};
+
+
+template <typename T>
+class Student {
+public:
+    Student() {
+        
+    }
+    Student(T name){
+        std::cout <<name << std::endl;
+    }
+};
+
+//template<> std::vector<std::string>::~vector() {
+//    
+//}
 + (void)load {
     std::vector<std::string> array = [self getIvarArray];
     for (auto &i :array) {
@@ -46,12 +90,20 @@ vector< string > text;
     ivec1[5] = 1234;
     std::cout << ivec1[0] << std::endl << ivec1[count-1] << std::endl;
     
-    int *p = (int *)&array;
+    //在容器vector中，其内存占用的空间是只增不减的，比如说首先分配了10,000个字节，然后erase掉后面9,999个，则虽然有效元素只有一个，但是内存占用仍为10,000个。所有内存空间在vector析构时回收。
+    //vector< T >().swap(X)
+    //使得它从曾经的容量减少至它现在需要的容量，这样减少容量的方法被称为“收缩到合适（shrink to fit）”
+    std::vector<std::string>().swap(array);
     
-    for (int i =0 ; p != nullptr; i++) {
-        std::cout << *p << typeid(*p).name() << std::endl;
-        p += sizeof(int);
+    // 上面的作用相当于：
+    {
+       std::vector<std::string> temp(array);
+       temp.swap(array);
     }
+    
+    Student<Teacher> student;
+    int a = 10, b =20;
+    __swap(a,b);
 }
 
 @end

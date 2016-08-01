@@ -12,7 +12,6 @@
 		295AF4201D49AA63007A793F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF41F1D49AA63007A793F /* UIView+Frame.m */; };
 		295AF4231D49AA92007A793F /* UIViewController+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF4221D49AA92007A793F /* UIViewController+Frame.m */; };
 		2963F1201D4EF23200E63113 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2963F11F1D4EF23200E63113 /* LoginModel.m */; };
-		2963F1261D4EF26100E63113 /* LoginModel+SaveDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2963F1251D4EF26100E63113 /* LoginModel+SaveDB.mm */; };
 		29B80AD01D46FC5B00AF3CC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B80ACF1D46FC5B00AF3CC2 /* main.m */; };
 		29B80AD31D46FC5B00AF3CC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B80AD21D46FC5B00AF3CC2 /* AppDelegate.m */; };
 		29B80AD91D46FC5C00AF3CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B80AD71D46FC5C00AF3CC2 /* Main.storyboard */; };
@@ -35,6 +34,7 @@
 		29C640AB1D49F66900CB4F0F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C640A71D49F52E00CB4F0F /* BaseViewController.m */; };
 		29C640AE1D49F7A700CB4F0F /* NSObject+ExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C640AD1D49F7A700CB4F0F /* NSObject+ExceptionHandler.m */; };
 		29C640B11D4A04FD00CB4F0F /* ViewControllersRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C640B01D4A04FD00CB4F0F /* ViewControllersRouter.m */; };
+		29E7EED21D4F37F10061A131 /* LoginModel+SaveDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29E7EED11D4F37F10061A131 /* LoginModel+SaveDB.mm */; };
 		B2DA612AC95EF89E9494C7A3 /* libPods-MVVMFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5261012B11E1DFD1C34CDD31 /* libPods-MVVMFrame.a */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +49,6 @@
 		295AF4221D49AA92007A793F /* UIViewController+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Frame.m"; sourceTree = "<group>"; };
 		2963F11E1D4EF23200E63113 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		2963F11F1D4EF23200E63113 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
-		2963F1241D4EF26100E63113 /* LoginModel+SaveDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginModel+SaveDB.h"; sourceTree = "<group>"; };
-		2963F1251D4EF26100E63113 /* LoginModel+SaveDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "LoginModel+SaveDB.mm"; sourceTree = "<group>"; };
 		29B80ACB1D46FC5B00AF3CC2 /* MVVMFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B80ACF1D46FC5B00AF3CC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B80AD11D46FC5B00AF3CC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +96,8 @@
 		29C640AF1D4A04FD00CB4F0F /* ViewControllersRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllersRouter.h; sourceTree = "<group>"; };
 		29C640B01D4A04FD00CB4F0F /* ViewControllersRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllersRouter.m; sourceTree = "<group>"; };
 		29C640B21D4A07D200CB4F0F /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		29E7EED01D4F37F10061A131 /* LoginModel+SaveDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginModel+SaveDB.h"; sourceTree = "<group>"; };
+		29E7EED11D4F37F10061A131 /* LoginModel+SaveDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "LoginModel+SaveDB.mm"; sourceTree = "<group>"; };
 		5261012B11E1DFD1C34CDD31 /* libPods-MVVMFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA6E367BF0DAA71E69E26D9 /* Pods-MVVMFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMFrame/Pods-MVVMFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		942D45C896286851A4A6C45C /* Pods-MVVMFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMFrame/Pods-MVVMFrame.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 			children = (
 				2963F11E1D4EF23200E63113 /* LoginModel.h */,
 				2963F11F1D4EF23200E63113 /* LoginModel.m */,
-				2963F1241D4EF26100E63113 /* LoginModel+SaveDB.h */,
-				2963F1251D4EF26100E63113 /* LoginModel+SaveDB.mm */,
+				29E7EED01D4F37F10061A131 /* LoginModel+SaveDB.h */,
+				29E7EED11D4F37F10061A131 /* LoginModel+SaveDB.mm */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -485,12 +485,12 @@
 				295AF41B1D49A414007A793F /* BaseListView.m in Sources */,
 				29C6407E1D49CFBD00CB4F0F /* BaseListViewModel.m in Sources */,
 				29B80B181D470FBB00AF3CC2 /* LoginViewModel.m in Sources */,
-				2963F1261D4EF26100E63113 /* LoginModel+SaveDB.mm in Sources */,
 				29B80AD31D46FC5B00AF3CC2 /* AppDelegate.m in Sources */,
 				29C640841D49DD6500CB4F0F /* ViewControllerSimpleConfig.m in Sources */,
 				295AF4231D49AA92007A793F /* UIViewController+Frame.m in Sources */,
 				29B80AD01D46FC5B00AF3CC2 /* main.m in Sources */,
 				29C640811D49D5EE00CB4F0F /* BaseListViewCell.m in Sources */,
+				29E7EED21D4F37F10061A131 /* LoginModel+SaveDB.mm in Sources */,
 				2963F1201D4EF23200E63113 /* LoginModel.m in Sources */,
 				295AF4201D49AA63007A793F /* UIView+Frame.m in Sources */,
 				29B80B1E1D4748E000AF3CC2 /* UserInfoModel.m in Sources */,
