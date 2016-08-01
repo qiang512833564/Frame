@@ -1,0 +1,14 @@
+
+MVVM在概念上是真正将页面与数据逻辑分离的模式，在开发方式上，它是真正将前台代码开发者（JS+HTML）与后台代码开发者分离的模式
+
+MVVM（Model-View- ViewModel）框架的由来便是MVP（Model-View-Presenter）模式与WPF结合的应用方式时发展演变过来的一种新型架构框架。 它立足于原有MVP框架并且把WPF的新特性揉合进去，以应对客户日益复杂的需求变化。
+
+MVVM 就是 MVP 的升级版，特点：就是 view 与 viewModel 之间的双向绑定
+
+不管是 MVVM 还是 MVP 框架，它们的目的都是为了：把 页面展示 、 数据获取、数据处理、业务逻辑等从混杂的状态分成单一模块
+
+注意：MVVM 或者 MVP 中：
+     model 与 view 不是直接进行通信的，中间会通过 viewModel 或者 presenter 来充当桥梁
+     所以：ViewModel 或者 Presenter 里面不仅持有 model，还持有 view 上需要 显示 的属性元素
+    
+     MVC 中：model 与 view 是直接进行通信的，所以 view 里面难免需要处理一些业务逻辑《比如：控件需要根根据 model 中的某一个字段来决定是否显示等》，controller 也只能被动的接收 view 的命令，然后在反应给 model《但是这一点，只是在比较不灵活的 单向通信 mvc 模式下存在的问题，实际项目中，却会扩展 mvc 模式，使其变得更灵活》

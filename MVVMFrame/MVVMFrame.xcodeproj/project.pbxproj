@@ -11,6 +11,8 @@
 		295AF41B1D49A414007A793F /* BaseListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF41A1D49A414007A793F /* BaseListView.m */; };
 		295AF4201D49AA63007A793F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF41F1D49AA63007A793F /* UIView+Frame.m */; };
 		295AF4231D49AA92007A793F /* UIViewController+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AF4221D49AA92007A793F /* UIViewController+Frame.m */; };
+		2963F1201D4EF23200E63113 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2963F11F1D4EF23200E63113 /* LoginModel.m */; };
+		2963F1261D4EF26100E63113 /* LoginModel+SaveDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2963F1251D4EF26100E63113 /* LoginModel+SaveDB.mm */; };
 		29B80AD01D46FC5B00AF3CC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B80ACF1D46FC5B00AF3CC2 /* main.m */; };
 		29B80AD31D46FC5B00AF3CC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B80AD21D46FC5B00AF3CC2 /* AppDelegate.m */; };
 		29B80AD91D46FC5C00AF3CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B80AD71D46FC5C00AF3CC2 /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 		295AF41F1D49AA63007A793F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		295AF4211D49AA92007A793F /* UIViewController+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Frame.h"; sourceTree = "<group>"; };
 		295AF4221D49AA92007A793F /* UIViewController+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Frame.m"; sourceTree = "<group>"; };
+		2963F11E1D4EF23200E63113 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		2963F11F1D4EF23200E63113 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		2963F1241D4EF26100E63113 /* LoginModel+SaveDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginModel+SaveDB.h"; sourceTree = "<group>"; };
+		2963F1251D4EF26100E63113 /* LoginModel+SaveDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "LoginModel+SaveDB.mm"; sourceTree = "<group>"; };
 		29B80ACB1D46FC5B00AF3CC2 /* MVVMFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B80ACF1D46FC5B00AF3CC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B80AD11D46FC5B00AF3CC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +137,17 @@
 				29C6408B1D49E73D00CB4F0F /* Category.h */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		2963F1171D4EF13800E63113 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2963F11E1D4EF23200E63113 /* LoginModel.h */,
+				2963F11F1D4EF23200E63113 /* LoginModel.m */,
+				2963F1241D4EF26100E63113 /* LoginModel+SaveDB.h */,
+				2963F1251D4EF26100E63113 /* LoginModel+SaveDB.mm */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		29B80AC21D46FC5B00AF3CC2 = {
@@ -267,6 +284,7 @@
 		29B80AF71D46FE6B00AF3CC2 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2963F1171D4EF13800E63113 /* Common */,
 				295AF41D1D49AA22007A793F /* Category */,
 			);
 			path = Util;
@@ -467,11 +485,13 @@
 				295AF41B1D49A414007A793F /* BaseListView.m in Sources */,
 				29C6407E1D49CFBD00CB4F0F /* BaseListViewModel.m in Sources */,
 				29B80B181D470FBB00AF3CC2 /* LoginViewModel.m in Sources */,
+				2963F1261D4EF26100E63113 /* LoginModel+SaveDB.mm in Sources */,
 				29B80AD31D46FC5B00AF3CC2 /* AppDelegate.m in Sources */,
 				29C640841D49DD6500CB4F0F /* ViewControllerSimpleConfig.m in Sources */,
 				295AF4231D49AA92007A793F /* UIViewController+Frame.m in Sources */,
 				29B80AD01D46FC5B00AF3CC2 /* main.m in Sources */,
 				29C640811D49D5EE00CB4F0F /* BaseListViewCell.m in Sources */,
+				2963F1201D4EF23200E63113 /* LoginModel.m in Sources */,
 				295AF4201D49AA63007A793F /* UIView+Frame.m in Sources */,
 				29B80B1E1D4748E000AF3CC2 /* UserInfoModel.m in Sources */,
 				29B80B1B1D4745D300AF3CC2 /* NewsViewModel.m in Sources */,

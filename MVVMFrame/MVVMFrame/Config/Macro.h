@@ -71,8 +71,9 @@
 
 #define mainThreadQueue(...) \
         autoreleasepool {\
-        dispatch_async(dispatch_get_main_queue(), ^{__VA_ARGS__});\
-        }
+        if ([NSThread isMainThread]) {__VA_ARGS__} else {\
+        dispatch_sync(dispatch_get_main_queue(), ^{__VA_ARGS__});\
+        }}
 
 #define isKindClass(A, B) \
         ({ \

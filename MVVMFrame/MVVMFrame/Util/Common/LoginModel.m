@@ -10,4 +10,10 @@
 
 @implementation LoginModel
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key { }
+
++ (void)load {
+    
+}
+
 @end

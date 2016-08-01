@@ -16,6 +16,7 @@
 
 - (void)setX:(CGFloat)left {
     @weakify(self);
+    
     @mainThreadQueue (
                       
                           @strongify(self);
