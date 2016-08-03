@@ -13,5 +13,6 @@
 #import "UIViewController+Frame.h"
 #import "NSDictionary+Value.h"
 #import "NSObject+ExceptionHandler.h"
+#import "NSString+Utils.h"
 
 #endif /* Category_h */

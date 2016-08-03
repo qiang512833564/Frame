@@ -15,4 +15,19 @@
 
 + (void)load {
 }
+
+static LoginModel *user;
+
++ (instancetype)shareInstance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (user == nil) {
+            user = [[LoginModel alloc]init];
+        }
+    });
+    return user;
+}
+
+
+
 @end
